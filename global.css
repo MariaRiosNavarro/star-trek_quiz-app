@@ -39,7 +39,7 @@ body {
   line-height: 1.5;
   font-family: var(--ff-primary);
   color: var(--black);
-  background-color: var(--bg-body);
+  background-image: url("");
 }
 
 button {
