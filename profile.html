@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz-App</title>
     <link rel="stylesheet" href="./styles.css" />
-    <script src="index.js" defer></script>
+    <script src="profile.js" defer></script>
   </head>
-  <body>
-    <header class="header">
+  <body data-js="body">
+    <header class="header" data-js="header">
       <h1 class="header__title">🖖Profile🖖</h1>
     </header>
-    <main class="profile">
+    <main class="profile" data-js="main" >
       <div class="profile__card">
         <img
           class="profile__card-img"
@@ -59,6 +59,7 @@
           type="checkbox"
           id="switch-darkmode"
           class="profile__settings-darkmode-input"
+          data-js="darkmode-checkbox"
         />
         <label for="switch-darkmode" class="profile__settings-darkmode-label"
           >Toggle Darkmode</label
