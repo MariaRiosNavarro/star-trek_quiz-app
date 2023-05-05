@@ -1,5 +1,6 @@
 .profile {
   padding: 10rem 6rem 8rem 6rem;
+  background-color: var(--transparency-bg);
 }
 
 .profile > * {
@@ -41,7 +42,7 @@
 .profile__settings-darkmode-label:before {
   width: 80px;
   height: 40px;
-  background: var(--secondary-light);
+  background: var(--black);
   display: block;
   border-radius: 100px;
   position: absolute;
@@ -70,10 +71,3 @@
   + .profile__settings-darkmode-label:after {
   right: 5px;
 }
-
-/* new */
-
-/* .profile__aboutme-heading,
-.profile__aboutme-description {
-  background-color: var(--transparency-bg);
-} */
