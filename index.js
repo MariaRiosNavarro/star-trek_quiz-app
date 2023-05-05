@@ -6,4 +6,6 @@ bookmark.addEventListener("click", () => {
   bookmark.classList.toggle("bookmark--active");
 });
 
+console.log("hello");
+
 const answer = document.querySelector('[data-js="answer"]');
