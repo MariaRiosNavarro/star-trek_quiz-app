@@ -4,7 +4,9 @@
   text-align: center;
   position: relative;
   border-radius: 10%;
-  background-color: rgba(var(--secondary-light), 0.8);
+  /* background-color: rgba(var(--secondary-light), 0.1); */
+  /* background-color: rgba(var(--secondary-light), var(--alpha)); */
+  background-color: var(--transparency-bg);
 }
 
 .card__question {
@@ -13,11 +15,13 @@
 
 .card__button-answer {
   background: var(--secondary);
-  color: var(--white);
+  color: var(--black);
+  font-weight: 900;
   border: none;
   display: block;
   margin: 0 auto 2rem auto;
   padding: 1rem;
+  border-radius: 15%;
 }
 
 .card__button-answer:hover {
@@ -50,7 +54,7 @@
 
 .card__tag-list-item {
   background-color: var(--secondary);
-  color: var(--white);
+  color: var(--black);
   border-radius: 4px;
   padding: 0 5px;
 }
