@@ -4,8 +4,7 @@
   text-align: center;
   position: relative;
   border-radius: 10%;
-  background-color: var(--secondary-light);
-  
+  background-color: rgba(var(--secondary-light), 0.8);
 }
 
 .card__question {
