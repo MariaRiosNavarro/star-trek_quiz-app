@@ -39,7 +39,10 @@ body {
   line-height: 1.5;
   font-family: var(--ff-primary);
   color: var(--black);
-  background-image: url("");
+  background-image: url("assets/universe.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 button {
