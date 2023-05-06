@@ -18,8 +18,8 @@
   font-weight: 900;
   border: none;
   display: block;
-  margin: 0 auto 2rem auto;
-  padding: 1rem;
+  margin: 0 auto 1rem auto;
+  padding: 0.5rem;
   border-radius: 15%;
 }
 
@@ -51,6 +51,8 @@
   flex-wrap: wrap;
   gap: 5px;
   margin-top: 20px;
+  position: absolute;
+  bottom: 1rem;
 }
 
 .card__tag-list-item {
