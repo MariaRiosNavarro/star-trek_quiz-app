@@ -59,9 +59,3 @@
   border-radius: 4px;
   padding: 0 5px;
 }
-
-/* CSS for Event listener and new button */
-
-.display-none {
-  display: none;
-}
