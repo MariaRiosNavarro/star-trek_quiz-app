@@ -11,8 +11,6 @@
   cursor: pointer;
 }
 
-
-
 .bookmark__icon {
   fill: currentcolor;
   width: 2em;
@@ -20,13 +18,7 @@
 
 /* Style for event listener: Bookmark full after click */
 
-
-/* .bookmark--active {
-  color: var(--primary);
-} */
-
 .bookmark-path--active {
   fill: var(--primary);
   fill-opacity: 100%;
 }
-
