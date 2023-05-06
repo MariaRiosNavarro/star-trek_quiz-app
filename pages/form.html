@@ -11,25 +11,27 @@
       type="image/vnd.microsoft.icon"
       href="assets/faviconTrek.ico"
     />
-    <script src="index.js" defer></script>
+    <script src="/js/form.js" defer></script>
   </head>
   <body>
     <header class="header">
       <h1 class="header__title">🖖Treck-Quiz🖖</h1>
     </header>
     <main>
-        <form class="form-card" action="">
+        <form class="form-card" data-js="form-card" action="">
             <label for="yourquestion">Your question:</label>
-            <textarea name="yourquestion" id="yourquestion" cols="30" rows="7" maxlength="150"></textarea>
+            <textarea name="yourquestion" id="yourquestion" cols="30" rows="7" maxlength="150" data-js="yourquestion"></textarea>
             <p class="character-counter question" data-js="character-counter-question"></p>
             <label for="youranswer">Your answer:</label>
-            <textarea name="youranswer" id="youranswer" cols="30" rows="7" maxlength="150"></textarea>
+            <textarea name="youranswer" id="youranswer" cols="30" rows="7" maxlength="150" data-js="youranswer"></textarea>
             <p class="character-counter answer" data-js="character-counter-answer"></p>
             <label for="yourtags">Your Tag:</label>
-            <input type="text" name="yourtags" id="youranswer">
+            <input type="text" name="yourtags" id="yourtags" data-js="yourtags">
             <button class="form-button" type="submit" data-js="form-button">submit</button>
         </form>
-
+        <ul class="card-list">
+            <!-- <li class="card-list__item"></li> -->
+        </ul>
     </main>
 
     <nav class="navigation">
