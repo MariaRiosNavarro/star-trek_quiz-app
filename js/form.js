@@ -1,18 +1,11 @@
-// Read all entered data from the input fields (question, answer, tags)
-
-// Generate all DOM element for a card with createElement()
-// Insert the form's data as text into the DOM elements
-// Append the card to the page, directly below the form
-
-//create the variables:
+//create the variables to save the form data
 const form = document.querySelector('[data-js="form-card"]');
 const textQuestion = document.querySelector('[data-js="yourquestion"]');
 const textAnswer = document.querySelector('[data-js="youranswer"]');
 const inputTag = document.querySelector('[data-js="yourtags"]');
 const buttonForm = document.querySelector('[data-js="form-button"]');
 
-// Listen the form's submit event
-// Prevent the default submit behavior to handle everything within JavaScript
+// Event Listener to create new question card
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -22,9 +15,30 @@ form.addEventListener("submit", (event) => {
   cardList.style.display = "block";
   //original style answer is display none, here change it
   answerText.style.display = "block";
+  //give the content from textareas to the question cards
   h2Question.textContent = textQuestion.value;
   answerText.textContent = textAnswer.value;
   tagItem.textContent = inputTag.value;
+});
+
+//create varibles to count the characters
+
+const lengthQuestion = document.querySelector(
+  '[data-js="character-counter-question"]'
+);
+const lengthAnswer = document.querySelector(
+  '[data-js="character-counter-answer"]'
+);
+
+//Event Listener to show the number of characters
+
+function characterCalculation(a) {
+  return 150 - a.length + " remaining characters";
+}
+
+form.addEventListener("input", () => {
+  lengthQuestion.textContent = characterCalculation(textQuestion.value);
+  lengthAnswer.textContent = characterCalculation(textAnswer.value);
 });
 
 //the Card list is hidden ar the beginnig
