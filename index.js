@@ -1,13 +1,19 @@
 //create Varibles from HTML
 
+//------Bookmark-change  variables
+
 const bookmark = document.querySelector('[data-js="bookmark-button"]');
+const path = document.querySelector('[data-js="bookmark-path"]');
+
+//------AnswerButton-change  variables
+
 const answerButton = document.querySelector('[data-js="answer-button"]');
 const answer = document.querySelector('[data-js="answer"]');
 
 //Event Listener for Bookmark
 
 bookmark.addEventListener("click", () => {
-  bookmark.classList.toggle("bookmark--active");
+  path.classList.toggle("bookmark-path--active");
 });
 
 //Event Listener for Buttons and text change in Button
