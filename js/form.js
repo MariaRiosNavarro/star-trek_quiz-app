@@ -52,3 +52,18 @@ tagList.append(tagItem);
 bookmarktContainer.append(bookmarktButton);
 bookmarktButton.append(svg);
 svg.append(path);
+
+//Add styles
+
+cardList.classList.add("card-list");
+cardListItem.classList.add("card-list__item");
+article.classList.add("card");
+h2Question.classList.add("card__question");
+buttonAnswer.classList.add("card__button-answer");
+answerText.classList.add("card__answer");
+tagList.classList.add("card__tag-list");
+tagItem.classList.add("card__tag-list-item");
+bookmarktContainer.classList.add("card__button-bookmark");
+bookmarktButton.classList.add("bookmark");
+svg.classList.add("bookmark__icon");
+path.classList.add("bookmark-path");
