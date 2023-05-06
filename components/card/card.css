@@ -4,8 +4,6 @@
   text-align: center;
   position: relative;
   border-radius: 10%;
-  /* background-color: rgba(var(--secondary-light), 0.1); */
-  /* background-color: rgba(var(--secondary-light), var(--alpha)); */
   background-color: var(--transparency-bg);
   height: 19rem;
 }
@@ -60,4 +58,10 @@
   color: var(--black);
   border-radius: 4px;
   padding: 0 5px;
+}
+
+/* CSS for Event listener and new button */
+
+.display-none {
+  display: none;
 }
