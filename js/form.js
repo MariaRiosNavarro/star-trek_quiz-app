@@ -18,11 +18,13 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
   const formData = new FormData(event.target);
   const data = Object.fromEntries(formData);
+  //card is now visible
   cardList.style.display = "block";
+  //original style answer is display none, here change it
+  answerText.style.display = "block";
   h2Question.textContent = textQuestion.value;
   answerText.textContent = textAnswer.value;
   tagItem.textContent = inputTag.value;
-  
 });
 
 //the Card list is hidden ar the beginnig
