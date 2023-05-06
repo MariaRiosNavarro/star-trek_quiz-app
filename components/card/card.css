@@ -7,6 +7,7 @@
   /* background-color: rgba(var(--secondary-light), 0.1); */
   /* background-color: rgba(var(--secondary-light), var(--alpha)); */
   background-color: var(--transparency-bg);
+  height: 19rem;
 }
 
 .card__question {
@@ -25,13 +26,15 @@
 }
 
 .card__button-answer:hover {
-  opacity: 0.75;
   cursor: pointer;
+  border: 2px solid var(--primary);
 }
 
 .card__answer {
   margin: 0 2rem;
-  font-style: italic;
+  font-weight: 600;
+  background-color: var(--primary);
+
   display: none;
 }
 

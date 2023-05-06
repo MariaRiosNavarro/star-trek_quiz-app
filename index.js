@@ -8,4 +8,5 @@ bookmark.addEventListener("click", () => {
 
 answerButton.addEventListener("click", () => {
   answer.classList.toggle("card__answer--active");
+  answerButton.textContent.toggle = "Hide answer";
 });
