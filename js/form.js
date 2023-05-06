@@ -30,9 +30,25 @@ const buttonAnswer = document.createElement("button");
 const answerText = document.createElement("p");
 const tagList = document.createElement("ul");
 const tagItem = document.createElement("li");
-const div = document.createElement("div");
+const bookmarktContainer = document.createElement("div");
 const bookmarktButton = document.createElement("button");
 const svg = document.createElement("svg");
 const path = document.createElement("path");
 
 //Create the DOM of the Question Cards
+
+const cardList = document.querySelector('[data-js="card-list"]');
+
+cardList.append(cardListItem);
+cardListItem.append(article);
+article.append(
+  h2Question,
+  buttonAnswer,
+  answerText,
+  tagList,
+  bookmarktContainer
+);
+tagList.append(tagItem);
+bookmarktContainer.append(bookmarktButton);
+bookmarktButton.append(svg);
+svg.append(path);
