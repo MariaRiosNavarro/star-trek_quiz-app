@@ -19,16 +19,18 @@
     </header>
     <main>
         <form class="form-card" data-js="form-card" action="">
-            <label for="yourquestion">Your question:</label>
-            <textarea name="yourquestion" id="yourquestion" cols="30" rows="7" maxlength="150" data-js="yourquestion"></textarea>
+            <label for="yourquestion" class="yourquestion">Your question:</label>
+            <textarea name="yourquestion" id="yourquestion" cols="30" rows="3" maxlength="150" minlength="5" data-js="yourquestion" required></textarea>
             <p class="character-counter question" data-js="character-counter-question"></p>
-            <label for="youranswer">Your answer:</label>
-            <textarea name="youranswer" id="youranswer" cols="30" rows="7" maxlength="150" data-js="youranswer"></textarea>
+            <label for="youranswer" class="youranswer">Your answer:</label>
+            <textarea name="youranswer" id="youranswer" cols="30" rows="3" maxlength="150" minlength="1" data-js="youranswer" required></textarea>
             <p class="character-counter answer" data-js="character-counter-answer"></p>
-            <label for="yourtags">Your Tag:</label>
+            <label for="yourtags" class="yourtags">Your Tag:</label>
             <input type="text" name="yourtags" id="yourtags" data-js="yourtags">
             <button class="form-button" type="submit" data-js="form-button">submit</button>
+            <h3 class="downarrow" data-js="downarrow">⬇️ Your new Question-Cards ⬇️</h3>
         </form>
+
         <ul class="card-list" data-js="card-list">
             <!-- <li class="card-list__item"></li> -->
         </ul>

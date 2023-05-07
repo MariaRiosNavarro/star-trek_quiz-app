@@ -5,14 +5,17 @@ const textAnswer = document.querySelector('[data-js="youranswer"]');
 const inputTag = document.querySelector('[data-js="yourtags"]');
 const buttonForm = document.querySelector('[data-js="form-button"]');
 
+const downarrow = document.querySelector('[data-js="downarrow"]');
+
 // Event Listener to create new question card
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
   const formData = new FormData(event.target);
   const data = Object.fromEntries(formData);
-  //card is now visible
+  //card and NOTE ARE now visible
   cardList.style.display = "block";
+  downarrow.style.display = "block";
   //original style answer is display none, here change it
   answerText.style.display = "block";
   //give the content from textareas to the question cards

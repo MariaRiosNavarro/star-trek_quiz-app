@@ -23,6 +23,6 @@ answerButton.addEventListener("click", () => {
   if (answer.classList.contains("card__answer--active")) {
     answerButton.textContent = "Hide Answer";
   } else {
-    answerButton.textContent = "Show Answer";
+    answerButton.textContent = "Show Answer 🚀";
   }
 });
