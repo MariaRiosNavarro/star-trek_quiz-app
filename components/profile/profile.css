@@ -81,5 +81,9 @@
 
 .darkblue {
   background-color: rgba(23, 18, 102, 0.995);
-  color: antiquewhite;
+  color: #faebd7;
+}
+
+.yellowIconDarkMode {
+  color: #faebd7;
 }
