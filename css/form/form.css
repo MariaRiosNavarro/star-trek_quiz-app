@@ -1,0 +1,56 @@
+.form-card {
+  border: 2px solid var(--primary);
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+  border-radius: 5%;
+  background-color: var(--transparency-bg);
+  padding: 0.8 rem 2rem 3rem 2rem;
+  max-width: 50rem;
+  margin-top: 8rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.form-button {
+  background: var(--secondary);
+  color: var(--black);
+  font-weight: 900;
+  border: none;
+  display: block;
+  margin: 0 auto 1rem auto;
+  padding: 0.5rem;
+  border-radius: 15%;
+}
+
+.form-button:hover {
+  cursor: pointer;
+  border: 2px solid var(--primary);
+}
+
+.yourquestion,
+.youranswer,
+.yourtags {
+  font-size: x-large;
+  font-weight: 900;
+}
+
+.character-counter {
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+
+.downarrow {
+  display: none;
+  font-weight: 900;
+  color: var(--black);
+}
+
+textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: 500;
+}

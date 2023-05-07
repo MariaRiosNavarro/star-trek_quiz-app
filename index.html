@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz-App</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="icon"
+      type="image/vnd.microsoft.icon"
+      href="assets/faviconTrek.ico"
+    />
+    <script src="index.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -17,20 +23,61 @@
                 FIRST CARD
               -->
         <li class="card-list__item">
-          <article class="card">
+          <article class="card" data-js="card">
             <h2 class="card__question">Who was the captain of the Voyager?</h2>
-            <button class="card__button-answer" type="button">
+            <button
+              class="card__button-answer"
+              type="button"
+              data-js="answer-button"
+            >
               Show answer 🚀
             </button>
-            <p class="card__answer">Kathryn Janeway</p>
+            <p class="card__answer" data-js="answer">Kathryn Janeway</p>
             <ul class="card__tag-list">
               <li class="card__tag-list-item">#voyager</li>
               <li class="card__tag-list-item">#startrek</li>
               <li class="card__tag-list-item">#women</li>
             </ul>
             <div class="card__button-bookmark">
-              <button class="bookmark" aria-label="bookmark" type="button">
+              <button
+                class="bookmark"
+                aria-label="bookmark"
+                type="button"
+                data-js="bookmark-button"
+              >
                 <svg
+                  class="bookmark__icon"
+                  height="100%"
+                  version="1.1"
+                  viewBox="0 0 420 644"
+                  width="100%"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <path
+                    class="bookmark-path"
+                    data-js="bookmark-path"
+                    d="M212.312 23.5625C83.5374 217.525 40.1043 415.029
+                  25.0625 618.469C108.569 511.914 182.07 442.069 236.062
+                  409.625C295.674 373.805 347.014 430.462 397.469
+                  570.344C363.991 387.802 340.842 209.17 212.312
+                  23.5625ZM213.344 97.0625L232.062 250.062L277.125
+                  265.406L236.156 287.156L241.562 335.969L213.844
+                  288.688L184.656 337.75L190.562 286.375L148.875 265.375L194.125
+                  250.375L213.344 97.0625Z"
+                    fill="#1f7fc8"
+                    fill-opacity="0"
+                    fill-rule="evenodd"
+                    opacity="1"
+                    stroke="#000000"
+                    stroke-linecap="butt"
+                    stroke-linejoin="miter"
+                    stroke-width="11.8"
+                  />
+                </svg>
+
+                <!-- <svg
                   class="bookmark__icon"
                   xmlns="http://www.w3.org/2000/svg"
                   viewbox="0 0 24 24"
@@ -38,7 +85,7 @@
                   <path
                     d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"
                   />
-                </svg>
+                </svg> -->
               </button>
             </div>
           </article>
@@ -54,7 +101,7 @@
             <button class="card__button-answer" type="button">
               Show answer 🚀
             </button>
-            <p class="card__answer card__answer--active">Christopher Pike.</p>
+            <p class="card__answer">Christopher Pike.</p>
             <ul class="card__tag-list">
               <li class="card__tag-list-item">#enterprise</li>
               <li class="card__tag-list-item">#strangenewworlds</li>
@@ -62,17 +109,40 @@
             </ul>
             <div class="card__button-bookmark">
               <button
-                class="bookmark bookmark--active"
+                class="bookmark"
                 aria-label="bookmark"
                 type="button"
+                data-js="bookmark-button"
               >
                 <svg
                   class="bookmark__icon"
+                  height="100%"
+                  version="1.1"
+                  viewBox="0 0 420 644"
+                  width="100%"
+                  xml:space="preserve"
                   xmlns="http://www.w3.org/2000/svg"
-                  viewbox="0 0 24 24"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
                 >
                   <path
-                    d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"
+                    class="bookmark-path"
+                    data-js="bookmark-path"
+                    d="M212.312 23.5625C83.5374 217.525 40.1043 415.029
+              25.0625 618.469C108.569 511.914 182.07 442.069 236.062
+              409.625C295.674 373.805 347.014 430.462 397.469
+              570.344C363.991 387.802 340.842 209.17 212.312
+              23.5625ZM213.344 97.0625L232.062 250.062L277.125
+              265.406L236.156 287.156L241.562 335.969L213.844
+              288.688L184.656 337.75L190.562 286.375L148.875 265.375L194.125
+              250.375L213.344 97.0625Z"
+                    fill="#1f7fc8"
+                    fill-opacity="0"
+                    fill-rule="evenodd"
+                    opacity="1"
+                    stroke="#000000"
+                    stroke-linecap="butt"
+                    stroke-linejoin="miter"
+                    stroke-width="11.8"
                   />
                 </svg>
               </button>
@@ -97,14 +167,41 @@
               <li class="card__tag-list-item">#ferengi</li>
             </ul>
             <div class="card__button-bookmark">
-              <button class="bookmark" aria-label="bookmark" type="button">
+              <button
+                class="bookmark"
+                aria-label="bookmark"
+                type="button"
+                data-js="bookmark-button"
+              >
                 <svg
                   class="bookmark__icon"
+                  height="100%"
+                  version="1.1"
+                  viewBox="0 0 420 644"
+                  width="100%"
+                  xml:space="preserve"
                   xmlns="http://www.w3.org/2000/svg"
-                  viewbox="0 0 24 24"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
                 >
                   <path
-                    d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"
+                    class="bookmark-path"
+                    data-js="bookmark-path"
+                    d="M212.312 23.5625C83.5374 217.525 40.1043 415.029
+              25.0625 618.469C108.569 511.914 182.07 442.069 236.062
+              409.625C295.674 373.805 347.014 430.462 397.469
+              570.344C363.991 387.802 340.842 209.17 212.312
+              23.5625ZM213.344 97.0625L232.062 250.062L277.125
+              265.406L236.156 287.156L241.562 335.969L213.844
+              288.688L184.656 337.75L190.562 286.375L148.875 265.375L194.125
+              250.375L213.344 97.0625Z"
+                    fill="#1f7fc8"
+                    fill-opacity="0"
+                    fill-rule="evenodd"
+                    opacity="1"
+                    stroke="#000000"
+                    stroke-linecap="butt"
+                    stroke-linejoin="miter"
+                    stroke-width="11.8"
                   />
                 </svg>
               </button>
@@ -137,7 +234,7 @@
         <li class="navigation__list-item">
           <a
             class="navigation__link"
-            href="bookmarks.html"
+            href="pages/bookmarks.html"
             aria-label="go to bookmarks page"
           >
             <svg
@@ -155,7 +252,43 @@
         <li class="navigation__list-item">
           <a
             class="navigation__link"
-            href="profile.html"
+            href="pages/form.html"
+            aria-label="go to form page"
+          >
+            <svg
+              width="24"
+              height="24"
+              stroke-miterlimit="10"
+              style="
+                fill-rule: nonzero;
+                clip-rule: evenodd;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+              "
+              version="1.1"
+              viewBox="0 0 50 50"
+              width="100%"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <path
+                d="M25 2C12.3093 2 2 12.3093 2 25C2 37.6907 12.3093 48 25 48C37.6907 48 48 37.6907 48 25C48 12.3093 37.6907 2 25 2ZM25 4C36.6098 4 46 13.3902 46 25C46 36.6098 36.6098 46 25 46C13.3902 46 4 36.6098 4 25C4 13.3902 13.3902 4 25 4ZM24 13L24 24L13 24L13 26L24 26L24 37L26 37L26 26L37 26L37 24L26 24L26 13L24 13Z"
+                fill="#000000"
+                fill-rule="nonzero"
+                opacity="1"
+                stroke="#000000"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke-width="1.8"
+              />
+            </svg>
+          </a>
+        </li>
+        <li class="navigation__list-item">
+          <a
+            class="navigation__link"
+            href="pages/profile.html"
             aria-label="go to profile page"
           >
             <svg

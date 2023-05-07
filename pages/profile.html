@@ -5,13 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz-App</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link
+      rel="icon"
+      type="image/vnd.microsoft.icon"
+      href="assets/faviconTrek.ico"
+    />
+    <script src="/js/profile.js" defer></script>
   </head>
-  <body>
-    <header class="header">
+  <body data-js="body">
+    <header class="header" data-js="header">
       <h1 class="header__title">🖖Profile🖖</h1>
     </header>
-    <main class="profile">
+    <main class="profile" data-js="main">
       <div class="profile__card">
         <img
           class="profile__card-img"
@@ -20,7 +26,7 @@
           height="200"
           width="200"
         />
-        <h2 class="profile-card__name">🖖Spock</h2>
+        <h2 class="profile-card__name">Spock</h2>
       </div>
       <h3 class="profile__aboutme-heading">About me</h3>
       <p class="profile__aboutme-description">“Live long, and prosper.”</p>
@@ -58,6 +64,7 @@
           type="checkbox"
           id="switch-darkmode"
           class="profile__settings-darkmode-input"
+          data-js="darkmode-checkbox"
         />
         <label for="switch-darkmode" class="profile__settings-darkmode-label"
           >Toggle Darkmode</label
@@ -65,12 +72,12 @@
       </form>
     </main>
 
-    <nav class="navigation">
+    <nav class="navigation" data-js="nav">
       <ul class="navigation__list">
         <li class="navigation__list-item">
           <a
             class="navigation__link"
-            href="index.html"
+            href="/index.html"
             aria-label="go to home page"
           >
             <svg
@@ -85,6 +92,8 @@
             </svg>
           </a>
         </li>
+      </li>
+
         <li class="navigation__list-item">
           <a
             class="navigation__link"
@@ -99,6 +108,42 @@
             >
               <path
                 d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2zm0 15l-5-2.18L7 18V5h10v13z"
+              />
+            </svg>
+          </a>
+        </li>
+        <li class="navigation__list-item">
+          <a
+            class="navigation__link"
+            href="form.html"
+            aria-label="go to form page"
+          >
+            <svg
+              width="24"
+              height="24"
+              stroke-miterlimit="10"
+              style="
+                fill-rule: nonzero;
+                clip-rule: evenodd;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+              "
+              version="1.1"
+              viewBox="0 0 50 50"
+              width="100%"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <path
+                d="M25 2C12.3093 2 2 12.3093 2 25C2 37.6907 12.3093 48 25 48C37.6907 48 48 37.6907 48 25C48 12.3093 37.6907 2 25 2ZM25 4C36.6098 4 46 13.3902 46 25C46 36.6098 36.6098 46 25 46C13.3902 46 4 36.6098 4 25C4 13.3902 13.3902 4 25 4ZM24 13L24 24L13 24L13 26L24 26L24 37L26 37L26 26L37 26L37 24L26 24L26 13L24 13Z"
+                fill="#000000"
+                fill-rule="nonzero"
+                opacity="1"
+                stroke="#000000"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke-width="1.8"
               />
             </svg>
           </a>
