@@ -13,7 +13,7 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
   const formData = new FormData(event.target);
   const data = Object.fromEntries(formData);
-  //card and NOTE ARE now visible
+  //card and h3 ARE now visible
   cardList.style.display = "block";
   downarrow.style.display = "block";
   //original style answer is display none, here change it
@@ -44,7 +44,7 @@ form.addEventListener("input", () => {
   lengthAnswer.textContent = characterCalculation(textAnswer.value);
 });
 
-//the Card list is hidden ar the beginnig
+//the Card list is hidden at the beginnig
 
 const cardList = document.querySelector('[data-js="card-list"]');
 cardList.style.display = "none";
