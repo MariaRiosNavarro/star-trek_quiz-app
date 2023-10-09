@@ -1,5 +1,10 @@
 export const starTrekQuestions = [
   {
+    question: "Who was the captain of the Voyager?",
+    answer: "Kathryn Janeway",
+    tags: ["voyager", "women"],
+  },
+  {
     question: "What is the primary setting of Star Trek: The Next Generation?",
     answer: "The USS Enterprise-D",
     tags: ["Setting", "TNG"],
