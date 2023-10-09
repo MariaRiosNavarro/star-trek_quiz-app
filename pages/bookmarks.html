@@ -12,15 +12,15 @@
       href="assets/faviconTrek.ico"
     />
 
-    <script src="/index.js" defer></script>
+    <script src="/index.js" defer type="module"></script>
   </head>
   <body>
     <header class="header">
       <h1 class="header__title">🖖Bookmarks🖖</h1>
     </header>
     <main>
-      <ul class="card-list">
-        <li class="card-list__item">
+      <ul class="card-list" data-js="home-bookmark-list">
+        <!-- <li class="card-list__item">
           <article class="card">
             <h2 class="card__question">Who was the captain of the Voyager?</h2>
             <button class="card__button-answer" type="button">
@@ -71,7 +71,7 @@
               </button>
             </div>
           </article>
-        </li>
+        </li> -->
       </ul>
     </main>
 

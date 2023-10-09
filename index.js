@@ -1,6 +1,9 @@
 import { starTrekQuestions } from "./db.js";
 
 const homeCardsList = document.querySelector('[data-js="home-card-list"]');
+const homeBookmarkList = document.querySelector(
+  '[data-js="home-bookmark-list"]'
+);
 
 //------Bookmark-change  variables
 
@@ -91,6 +94,7 @@ starTrekQuestions.forEach((question) => {
   bookmarktButton.addEventListener("click", () => {
     const bookmarkPath = svg.querySelector('[data-js="bookmark-path"]');
     bookmarkPath.classList.toggle("bookmark-path--active");
+    homeBookmarkList.append(cardListItem);
   });
 
   //Event Listener for Buttons and text change in Button
