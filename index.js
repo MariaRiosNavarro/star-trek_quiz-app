@@ -1,9 +1,6 @@
 import { starTrekQuestions } from "./db.js";
 
 const homeCardsList = document.querySelector('[data-js="home-card-list"]');
-const homeBookmarkList = document.querySelector(
-  '[data-js="home-bookmark-list"]'
-);
 
 //------Bookmark-change  variables
 
@@ -17,7 +14,7 @@ starTrekQuestions.forEach((question) => {
   answerText.textContent = question.answer;
   const tagList = document.createElement("ul");
   const tagItem = document.createElement("li");
-  // question.tags.forEach((tag) => (tagItem.textContent = tag));
+  question.tags.forEach((tag) => (tagItem.textContent = tag));
   const bookmarktContainer = document.createElement("div");
   const bookmarktButton = document.createElement("button");
   const svg = document.createElement("svg");
@@ -94,25 +91,18 @@ starTrekQuestions.forEach((question) => {
   bookmarktButton.addEventListener("click", () => {
     const bookmarkPath = svg.querySelector('[data-js="bookmark-path"]');
     bookmarkPath.classList.toggle("bookmark-path--active");
-    if (bookmarkPath.classList.toggle("bookmark-path--active")) {
+  });
+
+  //Event Listener for AnswerButton
+
+  buttonAnswer.addEventListener("click", () => {
+    answerText.classList.toggle("card__answer--active");
+    if (answerText.classList.contains("card__answer--active")) {
       buttonAnswer.textContent = "Hide Answer";
     } else {
       buttonAnswer.textContent = "Show Answer 🚀";
     }
   });
-});
-
-//Event Listener for Buttons and text change in Button
-
-buttonAnswer.addEventListener("click", () => {
-  answerText.classList.toggle("card__answer--active");
-
-  //   if (answerText.classList.contains("card__answer--active")) {
-  //     cardListItem.classList.add("")
-  //   } else {
-  //     buttonAnswer.textContent = "Show Answer 🚀";
-  //   }
-  // });
 });
 
 // svg.setAttribute("height", "100%");
