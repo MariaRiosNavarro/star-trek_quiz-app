@@ -94,19 +94,25 @@ starTrekQuestions.forEach((question) => {
   bookmarktButton.addEventListener("click", () => {
     const bookmarkPath = svg.querySelector('[data-js="bookmark-path"]');
     bookmarkPath.classList.toggle("bookmark-path--active");
-    homeBookmarkList.append(cardListItem);
-  });
-
-  //Event Listener for Buttons and text change in Button
-
-  buttonAnswer.addEventListener("click", () => {
-    answerText.classList.toggle("card__answer--active");
-    if (answerText.classList.contains("card__answer--active")) {
+    if (bookmarkPath.classList.toggle("bookmark-path--active")) {
       buttonAnswer.textContent = "Hide Answer";
     } else {
       buttonAnswer.textContent = "Show Answer 🚀";
     }
   });
+});
+
+//Event Listener for Buttons and text change in Button
+
+buttonAnswer.addEventListener("click", () => {
+  answerText.classList.toggle("card__answer--active");
+
+  //   if (answerText.classList.contains("card__answer--active")) {
+  //     cardListItem.classList.add("")
+  //   } else {
+  //     buttonAnswer.textContent = "Show Answer 🚀";
+  //   }
+  // });
 });
 
 // svg.setAttribute("height", "100%");

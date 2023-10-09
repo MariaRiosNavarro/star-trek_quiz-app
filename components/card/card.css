@@ -13,6 +13,12 @@
   -webkit-backdrop-filter: blur(3.4px);
 }
 
+.card--active {
+}
+
+.card--hidden {
+}
+
 .card__question {
   margin: 0 0 2rem;
   color: var(--secondary);
