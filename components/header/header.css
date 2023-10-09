@@ -4,11 +4,13 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 2rem 0;
+  padding: 0.5rem 0;
   background: var(--primary);
   border-bottom: 1px solid var(--black);
+  height: 3.5rem;
 }
 
 .header__title {
   text-align: center;
+  font-size: 2rem;
 }

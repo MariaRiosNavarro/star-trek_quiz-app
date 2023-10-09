@@ -1,12 +1,12 @@
 :root {
-  --primary: #1f7fc8;
+  --primary: #1f7ec7;
   --secondary: #ffc402;
   --secondary-light: #ffd900;
-  --transparency-bg: #e9dc2588;
+  --transparency-bg: #a7d3d966;
   --bg-body: #f5f5b7;
   --white: #ffffff;
   --black: #252629;
-  --ff-primary: sans-serif;
+  --ff-primary: Helvetica, Arial;
   --ff-serif: serif;
   --fs-200: 0.6rem;
   --fs-300: 0.8rem;
@@ -20,6 +20,10 @@
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 h1,
@@ -66,7 +70,6 @@ ol li {
 }
 
 img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+  width: 100%;
+  height: 100%;
 }

@@ -6,6 +6,15 @@ const inputTag = document.querySelector('[data-js="yourtags"]');
 const buttonForm = document.querySelector('[data-js="form-button"]');
 
 const downarrow = document.querySelector('[data-js="downarrow"]');
+const counterQuestion = document.querySelector(
+  '[data-js="character-counter-question"]'
+);
+const counterAnswer = document.querySelector(
+  '[data-js="character-counter-answer"]'
+);
+
+counterQuestion.style.visibility = "hidden";
+counterAnswer.style.visibility = "hidden";
 
 // Event Listener to create new question card
 
@@ -14,15 +23,25 @@ form.addEventListener("submit", (event) => {
   const formData = new FormData(event.target);
   const data = Object.fromEntries(formData);
   //card and h3 ARE now visible
-  cardList.style.display = "block";
-  downarrow.style.display = "block";
+  cardList.style.visibility = "visible";
+
+  downarrow.style.visibility = "visible";
   //original style answer is display none, here change it
-  answerText.style.display = "block";
+  answerText.style.visibility = "visible";
   //give the content from textareas to the question cards
   h2Question.textContent = textQuestion.value;
   answerText.textContent = textAnswer.value;
   tagItem.textContent = inputTag.value;
+  form.reset();
 });
+
+const counter1 = () => {
+  counterQuestion.style.visibility = "visible";
+};
+
+const counter2 = () => {
+  counterAnswer.style.visibility = "visible";
+};
 
 //create varibles to count the characters
 
@@ -47,7 +66,7 @@ form.addEventListener("input", () => {
 //the Card list is hidden at the beginnig
 
 const cardList = document.querySelector('[data-js="card-list"]');
-cardList.style.display = "none";
+cardList.style.visibility = "hidden";
 
 //Create elements for card-question:
 //li>article>h2>button>p>ul(li)div(button(svg(path)))
@@ -125,7 +144,7 @@ bookmarktButton.setAttribute("aria-label", "bookmark");
 // path.setAttribute("stroke-linejoin", "miter");
 // path.setAttribute("stroke-width", "11.8");
 
-bookmarktButton.innerHTML = ` <svg
+bookmarktButton.innerHTML = `<svg
 class="bookmark__icon"
 height="100%"
 version="1.1"
