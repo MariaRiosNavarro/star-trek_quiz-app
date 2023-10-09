@@ -1,22 +1,28 @@
 .navigation {
   background: var(--primary);
-  border-top: 1px solid var(--black);
+  border-top: 1px solid rgb(15, 111, 163);
   position: fixed;
   bottom: 0;
   left: 0;
+  height: 4rem;
   width: 100%;
 }
 
 .navigation__list {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
+  margin: auto 0;
 }
 
 .navigation__list-item {
-  padding: 1.5rem 0.5rem;
+  /* padding: 0.3rem; */
+  /* padding: 0.5rem auto; */
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 4rem;
 }
 
 .navigation__list-item--active {
@@ -24,7 +30,7 @@
 }
 
 .navigation__list-item:not(:first-child) {
-  border-left: 1px solid var(--black);
+  border-left: 1px solid rgb(15, 111, 163);
 }
 
 .navigation__link {
@@ -32,6 +38,10 @@
   background: transparent;
   border: none;
   padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navigation__link svg {
