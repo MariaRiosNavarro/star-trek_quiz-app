@@ -4,12 +4,15 @@
   gap: 2rem;
 }
 .form-card {
-  border: 2px solid var(--primary);
+  min-height: 400px;
+  background: rgba(31, 127, 200, 0.29);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(243, 243, 243, 0.554);
+  backdrop-filter: blur(3.4px);
+  -webkit-backdrop-filter: blur(3.4px);
   text-align: center;
   position: relative;
-  border-radius: 10%;
-  background-color: var(--transparency-bg);
-  padding: 0.8 rem 2rem 3rem 2rem;
+  padding: 0.8rem 2rem 3rem 2rem;
   margin-top: 8rem;
   margin-left: 2rem;
   margin-right: 2rem;
@@ -24,14 +27,17 @@
   font-weight: 900;
   border: none;
   display: block;
-  margin: 0 auto 0.5rem auto;
-  padding: 0.5rem;
-  border-radius: 15%;
+  margin: 2rem auto;
+  padding: 0.5rem 2rem;
+  border-radius: 8px;
+  width: 15rem;
+  font-size: 1.5rem;
 }
 
 .form-button:hover {
   cursor: pointer;
-  border: 2px solid var(--primary);
+  color: var(--secondary);
+  background-color: var(--primary);
 }
 
 .yourquestion,
@@ -40,6 +46,7 @@
   font-size: large;
   font-weight: 900;
   margin-top: 0;
+  color: var(--secondary);
 }
 
 .yourquestion {
@@ -49,11 +56,13 @@
 .character-counter {
   background-color: var(--primary);
   color: var(--secondary);
-  margin: 0;
+  margin: 1rem;
+  min-height: 2rem;
+  visibility: hidden;
 }
 
 .downarrow {
-  display: none;
+  visibility: hidden;
   font-weight: 900;
   color: var(--black);
   margin-top: 0;
@@ -69,7 +78,8 @@ input {
   font-weight: 500;
   margin-left: 1rem;
   margin-right: 1rem;
-  border-radius: 10px;
+  border-radius: 3px;
+  border: none;
 }
 
 .card-list-form {

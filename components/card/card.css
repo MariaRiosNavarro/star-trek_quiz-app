@@ -23,7 +23,6 @@
   color: var(--black);
   font-weight: 900;
   border: none;
-  display: block;
   margin: 0 auto 1rem auto;
   padding: 0.5rem 2rem;
   border-radius: 8px;
@@ -42,7 +41,7 @@
   background-color: var(--primary);
   color: var(--secondary);
   border-radius: 3px;
-  display: none;
+  visibility: hidden;
   padding: 1rem;
 }
 

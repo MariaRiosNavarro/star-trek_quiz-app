@@ -20,10 +20,10 @@
     <main class="main-form">
         <form class="form-card" data-js="form-card" action="">
             <label for="yourquestion" class="yourquestion">Your question:</label>
-            <textarea name="yourquestion" id="yourquestion" cols="30" rows="3" maxlength="150" minlength="5" data-js="yourquestion" required></textarea>
+            <textarea name="yourquestion" id="yourquestion" cols="30" rows="3" maxlength="150" minlength="5" data-js="yourquestion" oninput="counter1()" required></textarea>
             <p class="character-counter question" data-js="character-counter-question"></p>
             <label for="youranswer" class="youranswer">Your answer:</label>
-            <textarea name="youranswer" id="youranswer" cols="30" rows="3" maxlength="150" minlength="1" data-js="youranswer" required></textarea>
+            <textarea name="youranswer" id="youranswer" cols="30" rows="3" maxlength="150" minlength="1" data-js="youranswer" oninput="counter2()" required></textarea>
             <p class="character-counter answer" data-js="character-counter-answer"></p>
             <label for="yourtags" class="yourtags">Your Tag:</label>
             <input type="text" name="yourtags" id="yourtags" data-js="yourtags">
