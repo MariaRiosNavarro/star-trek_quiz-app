@@ -1,3 +1,5 @@
+import { starTrekQuestions } from "./db";
+
 //create Varibles from HTML
 
 //------Bookmark-change  variables
