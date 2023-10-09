@@ -144,7 +144,7 @@ bookmarktButton.setAttribute("aria-label", "bookmark");
 // path.setAttribute("stroke-linejoin", "miter");
 // path.setAttribute("stroke-width", "11.8");
 
-bookmarktButton.innerHTML = ` <svg
+bookmarktButton.innerHTML = `<svg
 class="bookmark__icon"
 height="100%"
 version="1.1"
