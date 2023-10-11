@@ -1,6 +1,6 @@
 # Start-Trek Quiz
 
-# [Deployment](https://mariariosnavarro.github.io/recap-project-2_quiz-app/)
+# [Deployment](https://mariariosnavarro.github.io/star-trek_quiz-app/)
 
 # Iphone SE, Iphone 12 pro, Galaxy S8+
 
